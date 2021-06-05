@@ -1,0 +1,332 @@
+PLAYER MACRO STRING1,STRING2,STRING3,STRING4,STRING5,STRING6,STRING7
+
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,0
+mov dh,25
+mov dl,80
+mov bh,01100000b
+int 10h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,6
+mov dl,34
+int 10h
+mov ah,09
+mov dx,offset msg
+int 21h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,8
+mov dl,10
+int 10h
+mov ah,09
+mov dx,offset msg2
+int 21h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,9
+mov dl,10
+int 10h
+mov ah,09
+mov dx,offset msg3
+int 21h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,10
+mov dl,10
+int 10h
+mov ah,09
+mov dx,offset msg4
+int 21h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,11
+mov dl,10
+int 10h
+mov ah,09
+mov dx,offset msg5
+int 21h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,12
+mov dl,10
+int 10h
+mov ah,09
+mov dx,offset msg6
+int 21h
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,13
+mov dl,10
+int 10h
+mov ah,09
+mov dx,offset msg7
+int 21h
+
+;Sun
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,0
+mov dh,4
+mov dl,7
+mov bh,01000010b
+int 10h
+
+;blue box
+mov ah,06
+mov al,0
+mov ch,5
+mov cl,0
+mov dh,8
+mov dl,7
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,9
+mov cl,0
+mov dh,12
+mov dl,7
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,0
+mov dh,16
+mov dl,7
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,0
+mov dh,20
+mov dl,7
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,0
+mov dh,24
+mov dl,7
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,8
+mov dh,24
+mov dl,18
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,18
+mov dh,24
+mov dl,28
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,29
+mov dh,24
+mov dl,39
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,40
+mov dh,24
+mov dl,50
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,51
+mov dh,24
+mov dl,61
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,62
+mov dh,24
+mov dl,72
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,72
+mov dh,24
+mov dl,80
+mov bh,01000010b
+int 10h
+
+;blue box
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,72
+mov dh,20
+mov dl,80
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,72
+mov dh,16
+mov dl,80
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,9
+mov cl,72
+mov dh,12
+mov dl,80
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,5
+mov cl,72
+mov dh,8
+mov dl,80
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,72
+mov dh,4
+mov dl,80
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,62
+mov dh,4
+mov dl,71
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,51
+mov dh,4
+mov dl,61
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,40
+mov dh,4
+mov dl,50
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,29
+mov dh,4
+mov dl,39
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,19
+mov dh,4
+mov dl,28
+mov bh,01000010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,28
+mov dh,4
+mov dl,19
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,8
+mov dh,4
+mov dl,18
+mov bh,00010010b
+int 10h
+
+endM

@@ -1,0 +1,620 @@
+menu macro string1,string2,string3
+
+
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,0
+mov dh,18
+mov dl,80
+mov bh,10110100b
+int 10h
+
+;Printing text
+mov ah,02
+mov bh,0
+mov bl,05
+mov dh,6
+mov dl,34
+int 10h
+
+mov ah,09
+mov al,05
+mov dx,offset msg
+int 21h
+
+
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,9
+mov dl,34
+int 10h
+
+mov ah,09
+mov dx,offset startgame
+int 21h
+
+;GRASS
+mov ah,06
+mov al,0
+mov ch,19
+mov cl,0
+mov dh,25
+mov dl,80
+mov bh,00100010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,60 
+mov dh,18
+mov dl,65
+mov bh,01100010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,8
+mov cl,57
+mov dh,12
+mov dl,68
+mov bh,00100010b
+int 10h
+
+;--------------------------------------------------
+;Sun
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,0
+mov dh,4
+mov dl,7
+mov bh,01000010b
+int 10h
+
+;blue box
+mov ah,06
+mov al,0
+mov ch,5
+mov cl,0
+mov dh,8
+mov dl,7
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,9
+mov cl,0
+mov dh,12
+mov dl,7
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,0
+mov dh,16
+mov dl,7
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,0
+mov dh,20
+mov dl,7
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,0
+mov dh,24
+mov dl,7
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,8
+mov dh,24
+mov dl,18
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,18
+mov dh,24
+mov dl,28
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,29
+mov dh,24
+mov dl,39
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,40
+mov dh,24
+mov dl,50
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,51
+mov dh,24
+mov dl,61
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,62
+mov dh,24
+mov dl,72
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,21
+mov cl,72
+mov dh,24
+mov dl,80
+mov bh,01000010b
+int 10h
+
+;blue box
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,72
+mov dh,20
+mov dl,80
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,72
+mov dh,16
+mov dl,80
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,9
+mov cl,72
+mov dh,12
+mov dl,80
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,5
+mov cl,72
+mov dh,8
+mov dl,80
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,72
+mov dh,4
+mov dl,80
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,62
+mov dh,4
+mov dl,71
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,51
+mov dh,4
+mov dl,61
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,40
+mov dh,4
+mov dl,50
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,29
+mov dh,4
+mov dl,39
+mov bh,00010010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,19
+mov dh,4
+mov dl,28
+mov bh,01000010b
+int 10h
+
+;redbox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,28
+mov dh,4
+mov dl,19
+mov bh,01000010b
+int 10h
+
+;bluebox
+mov ah,06
+mov al,0
+mov ch,0
+mov cl,8
+mov dh,4
+mov dl,18
+mov bh,00010010b
+int 10h
+
+;brownmov ah,06
+mov al,0
+mov ch,8
+mov cl,30
+mov dh,11
+mov dl,50
+mov bh,01100000b
+int 10h
+
+;blue box ah,06
+mov al,0
+mov ch,9
+mov cl,31
+mov dh,10
+mov dl,49
+mov bh,00110000b
+int 10h
+
+;brownmov ah,06
+mov al,0
+mov ch,13
+mov cl,30
+mov dh,16
+mov dl,50
+mov bh,01100000b
+int 10h
+
+;blue box ah,06
+mov al,0
+mov ch,14
+mov cl,31
+mov dh,15
+mov dl,49
+mov bh,00110000b
+int 10h
+
+;START
+mov ah,02
+mov bh,0
+mov bl,00
+mov dh,10
+mov dl,36
+int 10h
+mov ah,09
+mov dx,offset startgame
+int 21h
+
+;HOW TO PLAY
+mov ah,02
+mov bh,0
+mov bl,01
+mov dh,15
+mov dl,34
+int 10h
+mov ah,09
+mov dx,offset play
+int 21h
+
+;--------------------------Mario character-------------
+;------------------------Mario character--------------------
+
+;MARIO LEG1
+mov ah,06
+mov al,0
+mov ch,18
+mov cl,15
+mov dh,18
+mov dl,16
+mov bh,00010010b
+int 10h
+
+;MARIO LEG2
+mov ah,06
+mov al,0
+mov ch,18
+mov cl,19
+mov dh,18
+mov dl,20
+mov bh,00010010b
+int 10h
+
+;MARIO BODY
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,15
+mov dh,17
+mov dl,20
+mov bh,00010010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,16
+mov cl,14
+mov dh,16
+mov dl,21
+mov bh,01000010b
+int 10h
+
+;MARIO NECK
+mov ah,06
+mov al,0
+mov ch,15
+mov cl,16
+mov dh,15
+mov dl,19
+mov bh,00010010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,15
+mov cl,17
+mov dh,15
+mov dl,18
+mov bh,01100010b
+int 10h
+
+;MARIO HAIR
+mov ah,06
+mov al,0
+mov ch,12
+mov cl,15
+mov dh,14
+mov dl,20
+mov bh,01000010b
+int 10h
+
+;MARIO FACE
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,16
+mov dh,14
+mov dl,20
+mov bh,01100010b
+int 10h
+
+;MARIO EYES
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,16
+mov dh,13
+mov dl,16
+mov bh,01000010b
+int 10h
+
+;MARIO EYE2
+mov ah,06
+mov al,0
+mov ch,13
+mov cl,19
+mov dh,13
+mov dl,19
+mov bh,0000010b
+int 10h
+
+;MARIO MOUTH
+mov ah,06
+mov al,0
+mov ch,14
+mov cl,17
+mov dh,14
+mov dl,19
+mov bh,01100010b
+int 10h
+
+
+;MARIO HANDS
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,14
+mov dh,17
+mov dl,14
+mov bh,01110010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,17
+mov cl,21
+mov dh,17
+mov dl,21
+mov bh,01110010b
+int 10h
+
+;--------------------CLOUDS---------------------
+mov ah,06
+mov al,0
+mov ch,8
+mov cl,11
+mov dh,8
+mov dl,13
+mov bh,00010010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,7
+mov cl,14
+mov dh,8
+mov dl,16
+mov bh,00010010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,8
+mov cl,17
+mov dh,8
+mov dl,18
+mov bh,00010010b
+int 10h
+
+;CLOUD2
+mov ah,06
+mov al,0
+mov ch,10
+mov cl,19
+mov dh,10
+mov dl,20
+mov bh,00010010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,9
+mov cl,21
+mov dh,10
+mov dl,23
+mov bh,00010010b
+int 10h
+
+mov ah,06
+mov al,0
+mov ch,10
+mov cl,24
+mov dh,10
+mov dl,25
+mov bh,00010010b
+int 10h
+
+;CLOUD3
+mov al,0
+mov ch,10
+mov cl,53
+mov dh,10
+mov dl,54
+mov bh,00010010b
+int 10h
+
+mov al,0
+mov ch,9
+mov cl,55
+mov dh,10
+mov dl,57
+mov bh,00010010b
+int 10h
+
+mov al,0
+mov ch,10
+mov cl,58
+mov dh,10
+mov dl,59
+mov bh,00010010b
+int 10h
+
+;CLOUD4
+mov al,0
+mov ch,9
+mov cl,63
+mov dh,9
+mov dl,64
+mov bh,00010010b
+int 10h
+
+mov al,0
+mov ch,8
+mov cl,65
+mov dh,9
+mov dl,67
+mov bh,00010010b
+int 10h
+
+mov al,0
+mov ch,9
+mov cl,68
+mov dh,9
+mov dl,69
+mov bh,00010010b
+int 10h
+
+
+
+
+
+
+
+
+
+endm
